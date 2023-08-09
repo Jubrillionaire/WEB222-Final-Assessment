@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-family: "Arial", sans-serif;
+  --primary-font: "Exo 2", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --clr-primary: #212121;
+  --clr-secondary: #757575;
+  --clr-text: #000000;
+  --clr-light: #bdbdbd;
+  --clr-grey: #f6f6f6;
+  --clr-white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--secondary-font);
+  background-color: var(--clr-grey);
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-primary);
+}
+p,
+a {
+  color: var(--clr-secondary);
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--clr-secondary);
+  border-radius: 5px;
+  background: var(--clr-white);
+}
+
+section.history {
+  margin: 2rem 0;
+}
+section.history > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+section.history .img {
+  background-image: url(../assets/post-card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.history .text {
+  padding: 1rem;
+}
+section.history h2,
+section.others h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+}
+section.history p {
+  margin-bottom: 1rem;
+}
+section.others h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+section.others p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}

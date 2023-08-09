@@ -35,86 +35,6 @@ p,
 a {
   color: var(--clr-secondary);
 }
-
-.header {
-  /* box-shadow: var(--clr-primary) 0px 1px 4px, var(--clr-primary) 0px 0px 0px 3px; */
-  /* box-shadow: 0px 0px 0px 2px var(--clr-primary); */
-  /* height: 5vh; */
-  /* position: fixed; */
-  top: 0;
-  right: 0;
-  left: 0;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-.nav .brand {
-  flex-basis: 50%;
-}
-.nav .brand a {
-  color: var(--clr-primary);
-  text-decoration: none;
-  text-transform: capitalize;
-}
-.nav ul {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-}
-.nav ul a {
-  color: var(--clr-primary);
-  padding-right: 1rem;
-  margin-left: 1rem;
-  position: relative;
-  text-transform: capitalize;
-}
-.nav ul a:hover {
-  color: var(--clr-secondary);
-  transition: hover 0.2s linear;
-}
-.nav ul a:not(ul li:last-child a):after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  background: var(--clr-primary);
-  height: 100%;
-  right: 0;
-}
-
-section.hero {
-  height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section.hero .hero-container {
-  width: 90%;
-  margin: auto;
-}
-section.hero .hero-grid {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section.hero .hero-text {
-  flex-basis: 40%;
-}
-section.hero .hero-img {
-  flex-basis: 60%;
-  width: 100%;
-}
-section.hero .hero-img div {
-  width: 100%;
-}
-section.hero .hero-img img {
-  width: 100%;
-  height: 100%;
-}
 /* Post */
 section.posts {
   /* height: 95vh;
@@ -167,7 +87,6 @@ section.posts .post-card-text {
 section.posts .post-card-text div {
   margin-top: -7rem;
   position: relative;
-  z-index: 234;
   background: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -189,6 +108,18 @@ section.posts .post-card-text hr {
   display: block;
   margin-bottom: 1rem;
   width: 70%;
+}
+section.posts .post-card a {
+  color: var(--clr-primary);
+  background: var(--clr-white);
+  cursor: pointer;
+  transition: linear 0.15s;
+  display: block;
+  width: fit-content;
+}
+section.posts .post-card a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 /* Mail Section */
 section.newsletter {
