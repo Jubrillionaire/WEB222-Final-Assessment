@@ -8,7 +8,8 @@
   --clr-secondary: #757575;
   --clr-text: #000000;
   --clr-light: #bdbdbd;
-  --clr-white: #ffffff;
+  --clr-grey: #f6f6f6;
+  --clr-white: #fff;
 }
 * {
   margin: 0;
@@ -17,6 +18,7 @@
 }
 body {
   font-family: var(--secondary-font);
+  background-color: var(--clr-grey);
 }
 a {
   text-decoration: none;
@@ -187,4 +189,66 @@ section.posts .post-card-text hr {
   display: block;
   margin-bottom: 1rem;
   width: 70%;
+}
+/* Mail Section */
+section.newsletter {
+  margin-top: 1rem;
+  min-height: 100vh;
+  /* border-top: 3px solid var(--clr-primary); */
+  background-color: var(--clr-light);
+}
+section.newsletter .newsletter-bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.newsletter .newsletter-bg .box {
+  background: var(--clr-white);
+  width: 50%;
+  margin: auto;
+  box-shadow: var(--clr-secondary) 1.95px 1.95px 2.6px;
+  box-shadow: 0 4px 20px var(--clr-secondary);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 4px;
+}
+section.newsletter .newsletter-bg h2 {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 1rem 0;
+}
+section.newsletter .newsletter-bg p {
+  font-weight: 300;
+  font-size: 13px;
+  margin: 2rem 0;
+}
+section.newsletter .newsletter-bg form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+section.newsletter .newsletter-bg input {
+  padding: 1rem 0.5rem;
+  flex-basis: 70%;
+  border: 1px solid var(--clr-light);
+  border-radius: 4px;
+}
+section.newsletter .newsletter-bg button {
+  border-radius: 2px;
+  padding: 1rem 0.5rem;
+  flex-basis: 20%;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  background: var(--clr-white);
+  cursor: pointer;
+  transition: linear 0.15s;
+}
+section.newsletter .newsletter-bg button:hover {
+  color: var(--clr-white);
+  background: var(--clr-primary);
+  cursor: pointer;
 }
