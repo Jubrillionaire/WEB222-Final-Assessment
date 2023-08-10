@@ -37,7 +37,6 @@ section.posts .post-card-img img {
 section.posts .post-card-text {
   margin-top: 1rem;
   padding: 1rem;
-  background: var(--clr-white);
   border-radius: 4px;
 }
 section.posts .post-card-text div {
