@@ -1,10 +1,10 @@
 main {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
 }
 .review-card {
-  width: 600px;
+  width: 100%;
   border: 1px solid var(--clr-light);
   margin: 10px 0;
   border-top-right-radius: 20px;
@@ -46,4 +46,38 @@ main {
 }
 .review-card .rating {
   margin-bottom: 0.2rem;
+}
+.review-form {
+  margin-top: 1rem;
+}
+.review-form label {
+  color: var(--clr-primary);
+  margin-bottom: 0.2rem;
+  display: block;
+}
+.review-form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--clr-primary);
+}
+.review-form button {
+  border-radius: 2px;
+  padding: 1rem 0.5rem;
+  flex-basis: 20%;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  background: var(--clr-white);
+  cursor: pointer;
+  transition: linear 0.15s;
+  letter-spacing: 1px;
+  width: 100px;
+}
+.review-form button:hover {
+  color: var(--clr-white);
+  background: var(--clr-primary);
+  cursor: pointer;
 }
