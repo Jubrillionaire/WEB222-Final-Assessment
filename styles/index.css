@@ -80,7 +80,6 @@ section.posts .post-card a:hover {
 section.newsletter {
   margin-top: 1rem;
   min-height: 100vh;
-  /* border-top: 3px solid var(--clr-primary); */
   background-color: var(--clr-light);
 }
 section.newsletter .newsletter-bg {
@@ -122,6 +121,8 @@ section.newsletter .newsletter-bg input {
   flex-basis: 70%;
   border: 1px solid var(--clr-light);
   border-radius: 4px;
+  width: 100%;
+  height: 50px;
 }
 section.newsletter .newsletter-bg button {
   border-radius: 2px;
@@ -132,9 +133,56 @@ section.newsletter .newsletter-bg button {
   background: var(--clr-white);
   cursor: pointer;
   transition: linear 0.15s;
+  height: 50px;
 }
 section.newsletter .newsletter-bg button:hover {
   color: var(--clr-white);
   background: var(--clr-primary);
   cursor: pointer;
+}
+@media only screen and (max-width: 740px) {
+  section.posts .post-card-text h2 {
+    font-size: 20px;
+  }
+  section.posts .post-card-text p {
+    font-size: 14px;
+  }
+  section.posts .post-card a {
+    font-size: 13px;
+  }
+  section.newsletter .newsletter-bg form {
+    display: block;
+  }
+  section.newsletter .newsletter-bg button {
+    margin-top: 1rem;
+    width: 100px;
+    padding: 0.7rem 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  section.newsletter .newsletter-bg .box {
+    padding: 0.3rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  section.posts .post-card-text h2 {
+    font-size: 18px;
+  }
+  section.posts .post-card-text p {
+    font-size: 12px;
+  }
+  section.posts .post-card a {
+    font-size: 12px;
+  }
+  section.newsletter .newsletter-bg .box {
+    padding: 0.5rem;
+    width: 70%;
+  }
+  section.newsletter .newsletter-bg p {
+    margin: 1rem 0;
+  }
+  section.newsletter .newsletter-bg button {
+    height: 40px;
+  }
 }
