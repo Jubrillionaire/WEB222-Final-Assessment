@@ -1,0 +1,103 @@
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.review-card {
+  width: 100%;
+  border: 1px solid var(--clr-light);
+  margin: 10px 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.rating-stars {
+  color: gold;
+  font-size: 1.2rem;
+}
+.review-card .grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.review-card .name-text span {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  height: 100%;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.review-card .details {
+  padding: 1rem;
+}
+.review-card h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+.review-card .date {
+  margin-bottom: 0.1rem;
+}
+.review-card .rating {
+  margin-bottom: 0.2rem;
+}
+.review-form {
+  margin-top: 1rem;
+}
+.review-form label {
+  color: var(--clr-primary);
+  margin-bottom: 0.2rem;
+  display: block;
+}
+.review-form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  border: 1px solid var(--clr-primary);
+}
+.review-form button {
+  border-radius: 2px;
+  padding: 1rem 0.5rem;
+  flex-basis: 20%;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  background: var(--clr-white);
+  cursor: pointer;
+  transition: linear 0.15s;
+  letter-spacing: 1px;
+  width: 100px;
+}
+.review-form button:hover {
+  color: var(--clr-white);
+  background: var(--clr-primary);
+  cursor: pointer;
+}
+@media only screen and (max-width: 530px) {
+  .review-card h3 {
+    font-size: 18px;
+    margin-bottom: 0.3rem;
+  }
+  .review-card .date,
+  .review-card .rating {
+    font-size: 14px;
+  }
+  .rating-stars {
+    font-size: 14px;
+  }
+  .review-card p.text {
+    font-size: 14px;
+    margin-top: 0.5rem;
+  }
+  .reviews-container h2 {
+    margin-top: 2rem;
+  }
+}

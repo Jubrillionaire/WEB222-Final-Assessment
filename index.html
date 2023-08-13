@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./styles/index.css">
-</head>
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
 
-<body>
-    <h1>Hello</h1>
-</body>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="brand"><a href="/">city walk</a></div>
+        <ul>
+          <li><a href="./pages/about.html">about</a></li>
+          <!-- <li><a href="./pages/info.html">info</a></li> -->
+          <li><a href="./pages/reviews.html">reviews</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <section class="posts">
+      <div class="posts-container">
+        <div class="post-card">
+          <div class="post-card-bg">
+            <div class="post-card-img">
+              <div class="bg"></div>
+            </div>
+            <div class="post-card-text">
+              <div>
+                <h2>
+                  Unveiling Nigeria's Hidden Gems: Exploring Off-the-Beaten-Path
+                  Treasures
+                </h2>
+                <hr />
+                <p>
+                   Nigeria, a vibrant West African nation, boasts a
+                  rich tapestry of culture, history, and natural diversity. From
+                  bustling cities like Lagos with its modern energy, to the
+                  serene landscapes of the Niger Delta and the vast savannahs of
+                  the north, Nigeria offers an array of experiences. Its
+                  cultural heritage is a blend of over 250 ethnic groups, each
+                  contributing to the nation's music, art, cuisine, and
+                  traditions. While challenges exist, Nigeria's resilience,
+                  dynamism, and warm hospitality continue to make it a
+                  captivating destination for both adventurers and those seeking
+                  to uncover its multifaceted identity.
+                  <a href="./pages/info.html">Continue reading ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-bg">
+        <div class="box">
+          <h2>join our mailing list</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore
+            aspernatur consequatur est corporis facere?
+          </p>
+          <form action="https://httpbin.org/post" method="post">
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter your email address"
+            />
+            <input type="hidden" name="name" value="jubril" />
+            <button>Join</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

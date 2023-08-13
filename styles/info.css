@@ -1,0 +1,86 @@
+header.title {
+  text-align: center;
+  padding: 1rem 0;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--clr-secondary);
+  border-radius: 5px;
+  background: var(--clr-white);
+}
+
+section.history {
+  margin: 2rem 0;
+}
+section.history > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
+}
+section.history .img {
+  background-image: url(../assets/post-card.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.history .text {
+  padding: 1rem;
+}
+section.history h2,
+section.others h2 {
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+}
+section.history p {
+  margin-bottom: 1rem;
+}
+section.others h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+section.others p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 530px) {
+  section.history > div {
+    display: block;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  .title {
+    padding-bottom: 0.2rem;
+  }
+  section.history {
+    margin: 1rem 0;
+  }
+  main {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0.5rem;
+  }
+  section.history .text {
+    padding: 0.1rem;
+  }
+  section.history h2,
+  section.others h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  section.history p,
+  section.others p {
+    font-size: 12px;
+  }
+}

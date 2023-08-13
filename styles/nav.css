@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-family: "Arial", sans-serif;
+  --primary-font: "Exo 2", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --clr-primary: #212121;
+  --clr-secondary: #757575;
+  --clr-text: #000000;
+  --clr-light: #bdbdbd;
+  --clr-grey: #f6f6f6;
+  --clr-white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--secondary-font);
+  background-color: var(--clr-grey);
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clr-primary);
+}
+p,
+a {
+  color: var(--clr-secondary);
+}
+
+.header {
+  /* box-shadow: var(--clr-primary) 0px 1px 4px, var(--clr-primary) 0px 0px 0px 3px; */
+  /* box-shadow: 0px 0px 0px 2px var(--clr-primary); */
+  /* height: 5vh; */
+  /* position: fixed; */
+  top: 0;
+  right: 0;
+  left: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--clr-grey);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.nav .brand {
+  flex-basis: 50%;
+}
+.nav .brand a {
+  color: var(--clr-primary);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.nav ul {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav ul a {
+  color: var(--clr-primary);
+  padding-right: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  text-transform: capitalize;
+}
+.nav ul a:hover {
+  color: var(--clr-secondary);
+  transition: hover 0.2s linear;
+}
+.nav ul a:not(ul li:last-child a):after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: var(--clr-primary);
+  height: 100%;
+  right: 0;
+}
+@media only screen and (max-width: 400px) {
+  .nav .brand {
+    flex-basis: 30%;
+    font-size: 14px;
+  }
+  .nav ul {
+    flex-basis: 70%;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .nav .brand {
+    flex-basis: 15%;
+    font-size: 12px;
+  }
+  .nav ul {
+    flex-basis: 85%;
+    font-size: 10px;
+  }
+}
