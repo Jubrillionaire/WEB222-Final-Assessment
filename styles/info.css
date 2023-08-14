@@ -55,6 +55,12 @@ section.others p {
   section.history > div {
     display: block;
   }
+
+  .others img {
+    width: 100%;
+    height: 30vh;
+}
+
 }
 @media only screen and (max-width: 400px) {
   .title h1 {
