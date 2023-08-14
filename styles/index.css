@@ -9,9 +9,9 @@ section.posts .post-card {
 }
 section.posts .post-card-img {
   width: 100%;
-  height: 400px;
+  height: 400px !important;
   margin: auto;
-  background-image: url(../assets/post-card.jpg);
+  background-image: url(../assets/naija.jpeg);
   background-position: center;
   background-size: cover;
   position: relative;

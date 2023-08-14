@@ -24,7 +24,7 @@ section.history > div {
   grid-template-rows: repeat(1, auto);
 }
 section.history .img {
-  background-image: url(../assets/post-card.jpg);
+  background-image: url(../assets/naija.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -83,4 +83,9 @@ section.others p {
   section.others p {
     font-size: 12px;
   }
+}
+
+.others img{
+    width: 100%;
+    height: 70vh;
 }

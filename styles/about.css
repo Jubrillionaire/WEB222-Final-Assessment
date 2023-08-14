@@ -22,6 +22,13 @@ h2 {
 p {
   margin-bottom: 1rem;
 }
+ section a {
+  text-decoration: underline;
+  color: var(--clr-primary);
+ }
+ .citation {
+  margin-right: auto;
+ }
 
 @media only screen and (max-width: 820px) {
   main {
